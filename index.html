@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="pag1">
+                <div id="rec1" class="rec1 " >
+                    <div class="subcontenedor">
+                        <label id="pokeNameR" class ="pokeNameR">????</label>
+                        <br>
+                        <img class="pokeImagen" id="pokeImg" src="img/pokebola.png">
+                    </div>
+                    
+                    <div class="subcontenedor dato">
+                        <div class="filas">
+                            <label>Type:</label>
+                            <label id="pokeType1" class="tipo"></label>
+                            <label id="pokeType2" class="tipo"></label>
+                        </div>
+                        <div class="filas">
+                            <label>Height:</label>
+                            <label id="altura"></label>
+                        </div>
+                        <div class="filas">
+                            <label>Weight:</label>
+                            <label id="peso"></label>
+                        </div>
+                        <div class="filas">
+                            <label>Habitat:</label>
+                            <label id="habitat"></label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="subsub">
+                    <div class="apodo">
+                        <label id="pokeID"></label>
+                        <label id=genera></label>
+                        <br>
+                    </div>
+                    <div class="textopa1">
+                        <input type="text" id="pokeName" placeholder="Search Pokemon by name or ID">
+                        <button id="sbutton" onclick="fetchPokemon(); ">Search</button>
+                        
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="pag2">
+               
+                <ul class="ul">
+                    <li class="li activo">Info/Stats</li>
+                    <li class="li">Movement</li>
+                    <li class="li">Evolution</li>
+                </ul>
+                
+                
+
+                <div class="subcont">
+                    <div class="bloque uno activo">
+                        <div class="abilities">
+                            <label class="queso"> Abilty:</label>
+                            <label id="aby" > None</label>
+                            <label > Hidden Ability:</label>
+                            <label id="hidaby"> None</label>
+                        </div>
+                        <div class="stats">
+                            <div>
+                                <label >HP:</label>
+                                <label id="hp"></label>
+                            </div>
+                            <div>
+                                <label >Atk:</label>
+                                <label id="atk"></label>
+                            </div>
+                            <div>
+                                <label >Def:</label>
+                                <label id="def"></label>
+                            </div>
+                            <div>
+                                <label >Sp Atk:</label>
+                                <label id="spatk"></label>
+                            </div>
+                            <div>
+                                <label >Sp Def:</label>
+                                <label id="spdef"></label>
+                            </div>
+                            <div>
+                                <label >Spd:</label>
+                                <label id="spd"></label>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p id="descrip"></p>
+                        </div>
+                        
+                    </div>
+                    <div class="bloque dos">
+                        <ul class="movs" id="movs"></ul>
+                    </div>
+                    <div class="bloque">
+                        <div class="tarjeta">
+                            <img class="pokeImagen" id="pokeImgEvo1" src="img/pokebola.png">
+                            <br>
+                            <label id="pokeEvo1" onclick="fetchPokemon()"></label>
+                        </div>
+                        <div class="triangulo derecha">
+                            <div></div>
+                        </div>
+                        <div class="tarjeta">
+                            <img class="pokeImagen" id="pokeImgEvo2" src="img/pokebola.png">
+                            <br>
+                            <label id="pokeEvo2"></label>
+                        </div>
+                        <div class="triangulo derecha">
+                            <div></div>
+                        </div>
+                        <div class="tarjeta">
+                            <img class="pokeImagen" id="pokeImgEvo3" src="img/pokebola.png">
+                            <br>
+                            <label id="pokeEvo3"></label>
+                        </div>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+
+            </div>
+            
+            
+        </div>
+       
+    </main>
+    <footer>
+        <script src="scrip.js"></script>
+    </footer>
+</body>
+</html>
